@@ -8,8 +8,8 @@
         <title>Fiddle Notes</title>
         
         
-        <style type="text/css">
-                div#wrapper {
+       <style type="text/css">
+div#wrapper {
                             width:960px;
                             margin-left:auto;
                             margin-right:auto;
@@ -84,12 +84,9 @@
             
                 ul          {list-style-type: none;}
             
-            
-            
                 ul#navlist li.current {
                                         background-color: #413E38;
                                         }
-            
             
                 ul#navlist  {
 	                        padding: 8px;
@@ -101,7 +98,7 @@
                             }
 
             
-                ul#navlist>li   {
+                ul#navlist li   {
                             float: left;
 				            width: 154px;
 				            height: 40 px;
@@ -121,14 +118,14 @@
             
           
             
-                    ul#navlist>li a {
+                    ul#navlist li a {
 				                    text-decoration:none;
 				                    color:#856923;
 				                    display: block;
                                     font-size: 19px;
 				                    }     
                     
-                    ul#navlist>li a:hover  
+                    ul#navlist li a:hover  
                                     {
 	                                 color: #ffffff;
 	                                 background-color: #856923;
@@ -142,25 +139,42 @@
                                     padding:0;
                                     height:0;
                                     }
-                    
-                    
-         
+           
+            /*#navlist li:hover > #dropdown   {
+                                            visibility:visible;
+                                            width: 154px;
+                                            //height:100%;
+                                            float:none;
+                                            top:0;
+                                            padding:0;
+                                            position:relative;
+                                            }
+            
+            #navlist li:hover #dropdown     {
+                                            background-color:green;
+                                            padding:0;
+                                            float:none;
+                                            position:relative;
+                                            width: 154px;
+                                            display:inline-block;
+                                            height:auto;
+                                            }
+            */
             
               ul#navlist #dropdown          {
                                             display:none;
-                                            width:154px;}
+                                            }
             
             
-              ul#navlist li:hover ul#dropdown   {
-					                            display: block;
-                                                position:absolute;
-                                                }
+              ul#navlist li:hover #dropdown {
+					                       display: block;
+                                            float: none;
+                                            }
               
             
-       
-                section.location a {display: inline;
+         section.location a {display: inline;
                                     float:left;
-                                    clear:both;
+                                    //clear:both;
                                     text-decoration:none;
                                     color:  #413E38;
                                     margin-top: 30px;        
@@ -174,14 +188,13 @@
                                             color:#856923;
                                             }
             
-                 
-                footer a       {
-                                clear:both;
-                                color: #856923;
-                                font-family: sans-serif;
-                                font-size: 16px;
-                                text-decoration:none;
-                                }                       
+                footer a            {
+                                    clear:both;
+                                    color: #856923;
+                                    font-family: sans-serif;
+                                    font-size: 16px;
+                                    text-decoration:none;
+                                    }                       
 
                 img.logo        {
                                 //float:left;
@@ -190,6 +203,7 @@
                                 margin-top: 40px;
                                 margin-left: 80px;
                                 margin-bottom: 80px;}
+                           
                            
             
                 img.irishmusic  {
@@ -219,7 +233,7 @@
             
                 article.abouttrad,
                 article.thefiddle,
-				article.benefits    {
+				article.benefits{
                                     padding:5px;
                                     margin-left:20px;
                                     margin-right:20px;
@@ -228,42 +242,17 @@
                                     font-size: 16px;
                                     font-family: sans-serif;
                                     color:white;}
-                         
-                   
-                form                {
-                                    background-color: #413E38;
-                                    width: 700px;
-                                    margin-left:auto;
-                                    margin-right:auto;
-                                    margin-top:40px;
-                                    }				
-			 
-            
-            form > fieldset, legend {
-                                    margin-top:20px;
-                                    margin-bottom:30px;
-                                    margin-left:auto;
-                                    margin-right:auto;
-                                    }
-								   
-            #submit         {
-                            width:150px;
-                            margin-left:250px;
-                            font-size: 15px;
-                            background-color: #856923;
-                            box-shadow: 1px 1px 1px white;
-                            }		
-         
-   	   
+      
+					   
      </style>
-     
-	 
+                
+
 </head>
     
 <body>     
   <div id="wrapper">  
     <header> 
-        <img src=./img/fiddle.jpg alt="Website Logo" width=300 class="logo">
+         <img src=./img/fiddle.jpg alt="Website Logo" width=300 class="logo">
         
         <h1>Heading</h1>
         <div class="search">
@@ -276,9 +265,9 @@
     <main>
         <nav> 
         <ul id="navlist">
-            <li class="current"><a href="./index.html">About</a></li>
+            <li><a href="./index.html">About</a></li>
             <li><a href="./musicnotation_pg2.html">Music Notation</a></li>
-            <li><a href="#">Play the Fiddle</a>
+            <li class="current"><a href="#">Play the Fiddle</a>
                 <ul id="dropdown">
                      <li><a href="./learnthefiddle_pg3a.html">Parts of Fiddle</a></li>
                      <li><a href="./usingthefiddle_pg3b.html">Using the Fiddle</a></li>
@@ -294,7 +283,11 @@
   
      
     <section class="location">
-        <p> <a class="current" href="./index.html"> > Home </a></p>
+        <p> <a href="./index.html"> > Home </a></p>
+        <p> <a href="./musicnotation_pg2.html"> > Music Notation </a></p>
+        <p> <a href="./learnthefiddle_pg3a.html"> > Fiddle Parts </a>
+        <p> <a class="current" href="./usingthefiddle_pg3b.html"> > Fiddle Noteation</a>
+        </p>
     </section>
   
   

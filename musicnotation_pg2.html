@@ -141,20 +141,38 @@
                                     margin:0;
                                     padding:0;
                                     height:0;
-                                    }
-                    
-                    
-         
+                                    position:absolute;}
+           
+            /*#navlist li:hover > #dropdown   {
+                                            visibility:visible;
+                                            width: 154px;
+                                            //height:100%;
+                                            float:none;
+                                            top:0;
+                                            padding:0;
+                                            position:relative;
+                                            }
+            
+            #navlist li:hover #dropdown     {
+                                            background-color:green;
+                                            padding:0;
+                                            float:none;
+                                            position:relative;
+                                            width: 154px;
+                                            display:inline-block;
+                                            height:auto;
+                                            }
+            */
             
               ul#navlist #dropdown          {
                                             display:none;
-                                            width:154px;}
+                                            }
             
             
-              ul#navlist li:hover ul#dropdown   {
-					                            display: block;
-                                                position:absolute;
-                                                }
+              ul#navlist li:hover ul#dropdown {
+					                       display: block;
+                                            position:absolute;
+                                            }
               
             
        
@@ -175,13 +193,13 @@
                                             }
             
                  
-                footer a       {
-                                clear:both;
-                                color: #856923;
-                                font-family: sans-serif;
-                                font-size: 16px;
-                                text-decoration:none;
-                                }                       
+                footer a            {
+                                    clear:both;
+                                    color: #856923;
+                                    font-family: sans-serif;
+                                    font-size: 16px;
+                                    text-decoration:none;
+                                    }                       
 
                 img.logo        {
                                 //float:left;
@@ -219,7 +237,7 @@
             
                 article.abouttrad,
                 article.thefiddle,
-				article.benefits    {
+				article.benefits{
                                     padding:5px;
                                     margin-left:20px;
                                     margin-right:20px;
@@ -230,21 +248,19 @@
                                     color:white;}
                          
                    
-                form                {
-                                    background-color: #413E38;
-                                    width: 700px;
-                                    margin-left:auto;
-                                    margin-right:auto;
-                                    margin-top:40px;
-                                    }				
+            form    {background-color: #413E38;
+                    width: 700px;
+                    margin-left:auto;
+                    margin-right:auto;
+                    margin-top:40px;
+            }				
 			 
-            
             form > fieldset, legend {
-                                    margin-top:20px;
-                                    margin-bottom:30px;
-                                    margin-left:auto;
-                                    margin-right:auto;
-                                    }
+                            margin-top:20px;
+                            margin-bottom:30px;
+                            margin-left:auto;
+                            margin-right:auto;
+                            }
 								   
             #submit         {
                             width:150px;
@@ -263,11 +279,11 @@
 <body>     
   <div id="wrapper">  
     <header> 
-        <img src=./img/fiddle.jpg alt="Website Logo" width=300 class="logo">
+         <img src=./img/fiddle.jpg alt="Website Logo" width=300 class="logo">
         
         <h1>Heading</h1>
         <div class="search">
-            <input type="text" class="searchbar" placeholder="Search..">
+            <input type="text" class="searchbar" placeholder="Search...">
             <button class="go">Go</button>
         </div>
     </header>
@@ -276,8 +292,10 @@
     <main>
         <nav> 
         <ul id="navlist">
-            <li class="current"><a href="./index.html">About</a></li>
-            <li><a href="./musicnotation_pg2.html">Music Notation</a></li>
+            <li><a href="./index.html">About</a></li>
+            <li class="current">
+                <a href="./musicnotation_pg2.html">Music Notation</a>
+            </li>
             <li><a href="#">Play the Fiddle</a>
                 <ul id="dropdown">
                      <li><a href="./learnthefiddle_pg3a.html">Parts of Fiddle</a></li>
@@ -294,7 +312,8 @@
   
      
     <section class="location">
-        <p> <a class="current" href="./index.html"> > Home </a></p>
+        <p> <a href="./index.html"> > Home </a></p>
+        <p> <a class= "current" href="./musicnotation_pg2.html"> > Music Notation </a></p>
     </section>
   
   
